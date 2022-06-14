@@ -1,6 +1,6 @@
 <template>
   <div class="layout">
-    <div class="container mx-auto">
+    <div class="container mx-auto bg-white">
       <router-view/>
     </div>
   </div>

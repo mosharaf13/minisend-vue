@@ -31,7 +31,7 @@ export default defineComponent({
 
     const fetchEmails = () => {
       axios.get(`${apiEndpoint}/email`).then((response: any) => {
-        emails.value = response.data;
+        emails.value = response.data.data;
         console.log(emails);
       }).catch(function (error: any) {
         console.log(error);

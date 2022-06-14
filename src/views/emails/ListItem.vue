@@ -9,9 +9,14 @@
 <style>
   .email-row{
     border-bottom: 1px solid #e5e5e5;
-    transition: box-shadow .15s cubic-bezier(0.4,0,0.2,1);
+    transition: box-shadow .15s;
     display: flex;
     justify-content: flex-start;
+    padding: .5rem 2rem;
+    cursor: pointer;
+  }
+  .email-row:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
   }
 </style>
 
