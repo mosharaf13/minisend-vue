@@ -4,7 +4,7 @@ import HomeView from '../views/HomeView.vue'
 const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
-    redirect: "/email",
+    redirect: "email",
     component: () => import("@/views/layout/Layout.vue"),
     children: [
       {

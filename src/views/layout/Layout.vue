@@ -1,14 +1,22 @@
 <template>
-  <div class="container mx-auto" style="background-color: bisque">
-    <router-view />
+  <div class="layout">
+    <div class="container mx-auto">
+      <router-view/>
+    </div>
   </div>
+
 
 </template>
 
-
+<style>
+.layout {
+  background-color: #F5F8FA;
+  margin-top: 10rem;
+}
+</style>
 
 <script lang="ts">
-import {defineComponent, onMounted, ref} from "vue";
+import {defineComponent} from "vue";
 
 
 export default defineComponent({
