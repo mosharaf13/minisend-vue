@@ -1,5 +1,5 @@
 <template>
-  <div class="layout">
+  <div class="layout py-4 md:py-8">
     <div class="container mx-auto bg-white">
       <router-view/>
     </div>
@@ -11,7 +11,6 @@
 <style>
 .layout {
   background-color: #F5F8FA;
-  margin-top: 10rem;
 }
 </style>
 
