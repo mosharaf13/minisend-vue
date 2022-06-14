@@ -1,7 +1,16 @@
 <template>
 
   <div class="email-row">
-    {{email.subject}}
+    <div class="table-cell text-left ml-4 md:ml-9">
+      {{ email.from }}
+    </div>
+    <div class="table-cell text-left mx-4 md:mx-9">
+      {{email.to}}
+    </div>
+    <div class="table-cell text-left">
+      {{email.subject}}
+    </div>
+
   </div>
 
 </template>

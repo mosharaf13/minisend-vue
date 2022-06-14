@@ -1,6 +1,6 @@
 <template>
 
-  <div class="h-screen">
+  <div class="h-full">
     <div class="paginator">
       <button
           class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 mx-2 border border-gray-400 rounded shadow"
@@ -11,9 +11,10 @@
           :disabled="paginator.nextPageUrl === null" @click="fetchEmails(paginator.nextPageUrl)">Next
       </button>
     </div>
-    <list-item class="" v-for="email in emails" :key="email.id" :email="email">
+    <div class="table w-full">
+      <list-item class="table-row" v-for="email in emails" :key="email.id" :email="email"></list-item>
+    </div>
 
-    </list-item>
   </div>
 
 
