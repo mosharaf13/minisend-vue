@@ -6,8 +6,8 @@
         {{ email.subject }}
       </div>
 
-      <div class="body text-base py-8">
-        {{ email.body }}
+      <div class="body text-base py-8" v-html="email.body">
+
       </div>
     </div>
   </div>
