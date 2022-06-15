@@ -12,6 +12,12 @@ const routes: Array<RouteRecordRaw> = [
         name: "email",
         component: () => import("@/views/emails/List.vue"),
       },
+      {
+        path: "/email/:email_id",
+        name: "show-email",
+        component: () =>
+            import("@/views/emails/Show.vue"),
+      }
     ],
   },
   {

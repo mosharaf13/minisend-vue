@@ -12,7 +12,7 @@
       </button>
     </div>
     <div class="table w-full">
-      <list-item class="table-row" v-for="email in emails" :key="email.id" :email="email"></list-item>
+      <list-item  class="table-row" v-for="email in emails" :key="email.id" :email="email"></list-item>
     </div>
 
   </div>

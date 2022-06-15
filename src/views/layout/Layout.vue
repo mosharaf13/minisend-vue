@@ -1,6 +1,6 @@
 <template>
   <div class="layout py-4 md:py-8">
-    <div class="container mx-auto bg-white">
+    <div class="container h-screen mx-auto bg-white">
       <router-view/>
     </div>
   </div>
