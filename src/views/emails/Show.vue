@@ -6,7 +6,7 @@
         {{ email.subject }}
       </div>
 
-      <div class="body text-base py-8" v-html="email.body">
+      <div class="body text-base py-8" v-dompurify-html="email.body">
 
       </div>
     </div>
@@ -15,6 +15,7 @@
 
 <style>
 </style>
+
 
 <script lang="ts">
 import {defineComponent, onMounted, ref} from "vue";
@@ -50,6 +51,7 @@ export default defineComponent({
           .get(route)
           .then((response: any) => {
             email.value = response.data;
+
             console.log(email.value);
           })
           .catch(function (error: any) {
