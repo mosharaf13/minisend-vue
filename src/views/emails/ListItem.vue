@@ -55,7 +55,7 @@ export default defineComponent({
   setup(props) {
     const getColorClass = () => {
       if (props.email.status == 'posted') {
-        return 'bg-grey-400';
+        return 'bg-gray-400';
       } else if (props.email.status == 'sent') {
         return 'bg-green-400';
       } else {

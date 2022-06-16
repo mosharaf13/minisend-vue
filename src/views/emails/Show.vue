@@ -51,8 +51,6 @@ export default defineComponent({
           .get(route)
           .then((response: any) => {
             email.value = response.data;
-
-            console.log(email.value);
           })
           .catch(function (error: any) {
             console.log(error);
