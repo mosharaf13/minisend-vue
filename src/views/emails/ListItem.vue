@@ -20,7 +20,7 @@
         </div>
       </div>
       <div class="posted-time text-sm">
-        {{ email.created_at }}
+        {{ email.updated_at }}
       </div>
     </div>
   </router-link>
